@@ -5,7 +5,7 @@ try:
     y = int(input("y: "))
 except ValueError:
     print("Erro: Invalid input")
-    sys.exit(1)
+    sys.exit(1) #0: salida limpia sin errores/problemas. 1: hubo algun problema y el programa se ciera
 
 try:
     result = x / y
