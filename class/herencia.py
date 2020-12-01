@@ -1,5 +1,4 @@
 class Empleado:
-
     #Siempre en una clase un metodo contiene un self
     #El constructor se define con __init__
     def __init__(self, nombre, edad, legajo, salario):
@@ -12,7 +11,6 @@ class Empleado:
         return self.salario - descuentos + bonos
 
 class AgenteVentas(Empleado): #Entre parentesis llamas a la clase padre.
-
     def __init__(self, nombre, edad, legajo, salario, mostrador): #sobreescribo el metodo __init__ de la clase padre
         self.numeroMostrador = mostrador
         super().__init__(nombre,edad,legajo,salario) #a pesar de sobreescribir, puedo llamar al __init__ de la clase padre
